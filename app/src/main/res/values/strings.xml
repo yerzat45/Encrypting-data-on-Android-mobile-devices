@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KYT</string>
+    <string name="Button_1">AES</string>
+    <string name="Button_2">DES</string>
+    <string name="Button_3">RSA</string>
+    <string name="Button_4">tt</string>
+    <string name="Button_5">Шифровать</string>
+    <string name="Button_6">Расшифровать</string>
+    <string name="Button_7">Генерация</string>
+    <string name="Button_8">Шифровать ключ</string>
+    <string name="Button_9">Расшифровать ключ</string>
+    <string name="EditText_1">Введите ключ</string>
+    <string name="EditText_2">Публичный ключ</string>
+    <string name="EditText_3">Секретный ключ</string>
+    <string name="EditText_4">Шифровнаай ключ</string>
+    <string name="Button_10">ChaCha20</string>
+    <string name="Button_11">Shorthand</string>
+    <string name="EditText_5">Выберите изображение</string>
+    <string name="Button_12">Выберите изображение</string>
+    <string name="EditText_6">Расшифрованное сообщение появится здесь</string>
+    <string name="Button_13">KYT</string>
+</resources>

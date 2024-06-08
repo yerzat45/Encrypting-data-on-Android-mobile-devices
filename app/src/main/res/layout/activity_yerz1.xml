@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/olympic"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Текст"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Шифровать"
+        android:textColor="@color/olympic"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/encryptedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Зашифрованный текст"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Расшифровать"
+        android:textColor="@color/olympic"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/EditText_5"
+        android:textColor="@color/olympic"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonEncrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_5"
+        android:textColor="@color/olympic"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:contentDescription="Image" />
+
+    <Button
+        android:id="@+id/decryptImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:textColor="@color/olympic"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Decrypt Image" />
+</LinearLayout>

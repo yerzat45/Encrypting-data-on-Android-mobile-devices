@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/olympic"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="275dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/buttonAES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/Button_1"
+            android:textColor="@color/olympic" />
+
+        <Button
+            android:id="@+id/buttonDES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/olympic"
+            android:text="@string/Button_2" />
+
+        <Button
+            android:id="@+id/buttonRSA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/olympic"
+            android:text="@string/Button_3" />
+
+        <Button
+            android:id="@+id/buttonTwofish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/olympic"
+            android:text="@string/Button_10" />
+
+        <Button
+            android:id="@+id/buttonShorthand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/olympic"
+            android:text="@string/Button_11" />
+
+        <Button
+            android:id="@+id/buttonyerz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/olympic"
+            android:text="@string/Button_13" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
