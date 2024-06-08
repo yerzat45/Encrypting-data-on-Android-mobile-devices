@@ -1,130 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/olympic"
     tools:context=".MainActivity">
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:fillViewport="false">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:fillViewport="false"
         android:orientation="vertical"
-        android:layout_marginTop="10dp">
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextKey"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:hint="@string/EditText_1"
-            android:textColorHint="@color/black"
-            android:textSize="25sp" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/rsaEncryptFileBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Button_5"
-            android:textColor="@color/olympic"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/editTextKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:hint="@string/EditText_1"
+                android:textColorHint="@color/black"
+                android:textSize="25sp" />
 
-        <Button
-            android:id="@+id/rsaDecryptFileBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Button_6"
-            android:textColor="@color/olympic"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/rsaEncryptFileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Button_5"
+                android:textColor="@color/olympic"
+                android:textSize="25sp" />
 
-        <Button
-            android:id="@+id/buttonGenerateKey"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Button_7"
-            android:textColor="@color/olympic"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/rsaDecryptFileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Button_6"
+                android:textColor="@color/olympic"
+                android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/EditTextPublicKey"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:hint="@string/EditText_2"
-            android:textColorHint="@color/black"
-            android:textSize="25sp" />
+            <Button
+                android:id="@+id/buttonGenerateKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Button_7"
+                android:textColor="@color/olympic"
+                android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/EditTextPrivateKey"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:hint="@string/EditText_3"
-            android:textColorHint="@color/black"
-            android:textSize="25sp" />
+            <EditText
+                android:id="@+id/EditTextPublicKey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:hint="@string/EditText_2"
+                android:textColorHint="@color/black"
+                android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/EditTextEncryptKey"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:hint="@string/EditText_4"
-            android:textColorHint="@color/black"
-            android:textSize="25sp" />
+            <EditText
+                android:id="@+id/EditTextPrivateKey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:hint="@string/EditText_3"
+                android:textColorHint="@color/black"
+                android:textSize="25sp" />
 
-        <Button
-            android:id="@+id/EncryptKeyBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Button_8"
-            android:textColor="@color/olympic"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/EditTextEncryptKey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:hint="@string/EditText_4"
+                android:textColorHint="@color/black"
+                android:textSize="25sp" />
 
-        <Button
-            android:id="@+id/DecryptKeyBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Button_9"
-            android:textColor="@color/olympic"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/EncryptKeyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Button_8"
+                android:textColor="@color/olympic"
+                android:textSize="25sp" />
 
-        <Button
-            android:id="@+id/buttonGenerateKeyRSA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Button_7"
-            android:textColor="@color/olympic"
-            android:textSize="25sp"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
-        </ScrollView>
+            <Button
+                android:id="@+id/DecryptKeyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Button_9"
+                android:textColor="@color/olympic"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/buttonGenerateKeyRSA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/Button_7"
+                android:textColor="@color/olympic"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,16 +31,10 @@
             android:name=".AESFileEncryption"
             android:exported="false" />
         <activity
-            android:name=".RSAActivity"
-            android:exported="false" />
-        <activity
             android:name=".DESActivity"
             android:exported="false" />
         <activity
             android:name=".AESActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AES"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
